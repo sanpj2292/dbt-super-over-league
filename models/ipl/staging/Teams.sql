@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ ref('teams') }}
+    select DISTINCT team from {{ ref('teams') }}
 ),
 
 stage_team as
