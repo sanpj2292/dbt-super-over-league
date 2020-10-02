@@ -1,0 +1,10 @@
+version: 2
+sources:
+  - name: ipl_postgres
+    description: 'league data from postgres'
+    database: ipl
+    schema: league
+    tables:
+      - name: Players
+      - name: Matches
+      - name: Teams
